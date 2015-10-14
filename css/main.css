@@ -5,35 +5,279 @@
 @viewport-viewport { width: device width; scale: 1; }
 
 html {
+
   box-sizing: border-box;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100% ;
+  background-color: #f4f4f4;
+  font-weight: lighter;
+  font-family: 'Raleway', sans-serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  margin: 0;
+}
 
+header {
+  background-color: black;
+  margin: 0em;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  font-family: 'Lobster', cursive;
+}
 
-@media only screen and (min-width: 35em) {
-  body {
-    background-color: limegreen;
+.alex {
+  width: 20%;
+  border-radius: 60px;
+  height: auto;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 10%;
+
+}
+
+h1 {
+  text-align: center;
+  color: #195955;
+  margin-top: 0.5em;
+  padding-bottom: 0.5em;
+
+}
+
+p {
+  padding: 0 1rem;
+  margin: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5em 0;
+  background-color: blue;
+  opacity: 0;
+  margin: em;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  font-family: 'Lobster', cursive;
+}
+
+a {
+  color: white;
+}
+
+h2 {
+  color: #195955;
+  background-color: blue;
+  margin-top: 0;
+}
+
+.svg {
+  width: 85%;
+  height: auto;
+  transition: all .2s ease-in-out;
+}
+
+.nav li {
+  display: inline-block;
+  width: 15%;
+}
+
+.nav a {
+  display: inline-block;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 31em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
   }
 
-  h1 {
-    color: purple;
+  h1{
+    text-align: center;
+  }
+  p {
+    padding: 0 2em;
+  }
+
+  .svg {
+    width: 65%;
+    height: auto;
   }
 
 }
 
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 37em) {
+
+  .alex {
+    margin-top: 4%;
+    border-radius: 115px;
+  }
 
   h1 {
-    background-color: yellow;
+    margin-top: 0.25em;
+  }
+
+  p {
+    padding: 0 6em;
+  }
+
+}
+
+@media only screen and (min-width: 43em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  .head {
+    padding-left: 4em;
+  }
+
+  .alex {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2em;
+    width: 12%;
+  }
+
+  h1 {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+  }
+
+  h2 {
+    margin-bottom: 0.2em;
+  }
+
+  .svg {
+    width: 40%;
+  }
+
+  nav {
+    padding-bottom: 0em;
+  }
+
+  footer {
+    padding: 1em 0;
+  }
+}
+
+@media only screen and (min-width: 50em) {
+
+  html {
+    font-size: 130%;
+    line-height: 1.6;
+  }
+
+  .alex {
+    margin-bottom: 2em;
+    margin-left: 6em;
+  }
+
+  h1 {
+    margin: 0
+  }
+
+  p {
+    padding: 0 10em;
+  }
+}
+
+@media print {
+
+  html {
+    width: 3.5in;
+    height: 2in;
+    margin: 0;
+    padding: 0;
+    border: 1px black;
+  }
+
+  .head {
+    padding: 0em;
+  }
+
+  .alex {
+    display: inline-block;
+    width: 25%;
+    margin: 1em;
+  }
+
+  h1 {
+    display: inline-block;
+    color: black;
+    font-size: 1rem
+  }
+
+  h2 {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  main a::after {
+    content: " (" attr(href) ")";
+  }
+
+  img {
+    display: none;
+  }
+
+  p {
+    display: none;
+  }
+
+  .head {
+    padding: 0em;
+  }
+
+  .alex {
+    display: inline-block;
+    width: 25%;
+    margin: 1em;
+  }
+
+  header {
+    background-image: none;
+  }
+
+  h1 {
+    display: inline-block;
+    color: black;
+    font-size: 1rem
+  }
+
+  h2 {
+    display: none;
   }
 
 }
