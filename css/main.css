@@ -12,7 +12,6 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100% ;
   background-color: #f4f4f4;
-  font-weight: lighter;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -30,7 +29,7 @@ body {
 }
 
 header {
-  background-color: black;
+  background-color: grey;
   margin: 0em;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -64,22 +63,15 @@ p {
 footer {
   text-align: center;
   padding: 1.5em 0;
-  background-color: blue;
-  opacity: 0;
-  margin: em;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: left top;
   font-family: 'Lobster', cursive;
 }
 
-a {
-  color: white;
-}
 
 h2 {
   color: #195955;
-  background-color: blue;
   margin-top: 0;
 }
 
@@ -89,17 +81,8 @@ h2 {
   transition: all .2s ease-in-out;
 }
 
-.nav li {
-  display: inline-block;
-  width: 15%;
-}
-
 .nav a {
   display: inline-block;
-}
-
-li {
-  list-style-type: none;
 }
 
 ul {
@@ -125,7 +108,7 @@ a {
   }
 
   .svg {
-    width: 65%;
+    width: 85%;
     height: auto;
   }
 
@@ -177,7 +160,8 @@ a {
   }
 
   .svg {
-    width: 40%;
+    width: 90%;
+    height: auto;
   }
 
   nav {
